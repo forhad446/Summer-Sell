@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Sale</title>
+    <link rel="shortcut icon" href="./images/congo.png" type="image/x-icon">
+    <!-- Daisy & Tailwind Linked -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Work San's font added -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <style>
+        .text-workSans {
+            font-family: 'Inter', sans-serif;
+            font-family: 'Work Sans', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="text-workSans max-w-7xl mx-auto  bg-[#F8F8F8]">
+    <header>
+        <div id="banner_container" class="flex flex-col md:flex-row md:py-4 justify-center items-center bg-[#F9F6E2] ">
+            <div class="flex-1 text-center">
+                <h5 class="text-[#111] text-3xl font-medium">---SALE FEVER---</h5>
+                <h1 class="text-[#111] text-4xl md:text-4xl lg:text-6xl font-bold py-11">Purchase TK 200 or <br> above &
+                    get <span class="text-[#E527B2]">20% off</span></h1>
+                <div class="flex justify-center items-center gap-4">
+                    <h4 class="text-[#111] text-2xl font-medium">Use Promo Code</h4>
+                    <button id="coupon_code"
+                        class="text-2xl font-semibold px-6 py-3 bg-[#E527B2] text-[#FFF] rounded-lg">SELL200</button>
+                </div>
+            </div>
+            <div class="flex-1">
+                <img class="w-full" src="./images/Summer 1.png" alt="">
+            </div>
+        </div>
+    </header>
+    <main class="px-8 md:px-20 lg:px-20">
+        <section class=" mt-16">
+            <div>
+                <h1 class="text-[#111] text-4xl font-semibold mb-7">Kitchenware</h1>
+            </div>
+            <div id="container" class="flex flex-col lg:flex-row justify-between gap-6">
+                <div>
+                    <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                        <!-- card number 1 -->
+                        <div onclick="handleClickCard(this)" class="card  bg-[#FFF] p-5 rounded-lg">
+                            <figure class="bg-[#1111110D] py-4 px-16">
+                                <img src="./images/prod1.png" alt="prod1" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div class="flex ">
+                                    <img src="./images/Frame.svg" alt="">
+                                    <img src="./images/Frame.svg" alt="">
+                                    <img src="./images/Frame.svg" alt="">
+                                    <img src="./images/Frame2.svg" alt="">
+                                    <img src="./images/Frame2.svg" alt="">
+                                </div>
+                                <h2 id="kAccessories1_title" class="card-title text-[#111]">K. Accessories</h2>
+                                <p id="kAccessories1_price">39.00 TK</p>
+                            </div>
+                        </div>
+                        <!-- card number 2 -->
+                        <div onclick="handleClickCard(this)" class="card  bg-[#FFF] p-5 rounded-lg">
+                            <figure class="bg-[#1111110D] py-8 px-16">
+                                <img src="./images/prod2.png" alt="prod2" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div class="flex ">
+                                    <img src="./images/Frame2.svg" alt="">
+                                    <img src="./images/Frame2.svg" alt="">
+                                    <img src="./images/Frame2.svg" alt="">
+                                    <img src="./images/Frame2.svg" alt="">
+                                    <img src="./images/Frame2.svg" alt="">
+                                </div>
+                                <h2 class="card-title text-[#111]">K. Accessories</h2>
+                                <p id="kAccessories2_price">25.00 TK</p>
+                            </div>
+                        </div>
+                        <!-- card number 3 -->
+                        <div onclick="handleClickCard(this)" class="card  bg-[#FFF] p-5 rounded-lg">
+                            <figure class="bg-[#1111110D] py-8 px-16">
+                                <img src="./images/prod3.png" alt="prod1" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div class="flex ">
+                                    <img src="./images/Frame.svg" alt="">
+                                    <img src="./images/Frame.svg" alt="">
+                                    <img src="./images/Frame.svg" alt="">
+                                    <img src="./images/Frame.svg" alt="">
+                                    <img src="./images/Frame2.svg" alt="">
+                                </div>
+                                <h2 class="card-title text-[#111]">Home Cooker</h2>
+                                <p>49.00 TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sportswear title -->
+                    <div>
+                        <h1 class="text-[#111] text-4xl font-semibold mb-7 mt-10">Sportswear</h1>
+                    </div>
+                    <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                        <!-- card number 1 -->
+                        <div onclick="handleClickCard(this)" class="card  bg-[#FFF] p-5 rounded-lg">
+                            <figure class="bg-[#1111110D] py-12 px-16">
+                                <img src="./images/prod4.png" alt="prod1" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div class="flex ">
+                                    <img src="./images/Frame.svg" alt="">
+                                    <img src="./images/Frame.svg" alt="">
+                                    <img src="./images/Frame2.svg" alt="">
+                                    <img src="./images/Frame2.svg" alt="">
+                                    <img src="./images/Frame2.svg" alt="">
+                                </div>
+                                <h2 class="card-title text-[#111]">Sports Back Cap</h2>
+                                <p>49.00 TK</p>
+                            </div>
+                        </div>
+                        <!-- card number 2 -->
+                        <div onclick="handleClickCard(this)" class="card  bg-[#FFF] p-5 rounded-lg">
+                            <figure class="bg-[#1111110D] py-7 px-16">
+                                <img src="./images/prod5.png" alt="prod1" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div class="flex ">
+                                    <img src="./images/Frame.svg" alt="">
+                                    <img src="./images/Frame.svg" alt="">
+                                    <img src="./images/Frame.svg" alt="">
+                                    <img src="./images/Frame.svg" alt="">
+                                    <img src="./images/Frame2.svg" alt="">
+                                </div>
+                                <h2 class="card-title text-[#111]">Full Jersey Set</h2>
+                                <p>69.00 TK</p>
+                            </div>
+                        </div>
+                        <!-- card number 3 -->
+                        <div onclick="handleClickCard(this)" class="card  bg-[#FFF] p-5 rounded-lg">
+                            <figure class="bg-[#1111110D] py-10 px-16">
+                                <img src="./images/prod6.png" alt="prod1" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div class="flex ">
+                                    <img src="./images/Frame.svg" alt="">
+                                    <img src="./images/Frame.svg" alt="">
+                                    <img src="./images/Frame.svg" alt="">
+                                    <img src="./images/Frame2.svg" alt="">
+                                    <img src="./images/Frame2.svg" alt="">
+                                </div>
+                                <h2 class="card-title text-[#111]">Sports cates</h2>
+                                <p>159.00 TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Furniture title -->
+                    <div>
+                        <h1 class="text-[#111] text-4xl font-semibold mb-7 mt-10">Furniture</h1>
+                    </div>
+                    <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                        <!-- card number 1 -->
+                        <div onclick="handleClickCard(this)" class="card  bg-[#FFF] p-5 rounded-lg">
+                            <figure class="bg-[#1111110D] py-10 px-16">
+                                <img src="./images/prod7.png" alt="prod1" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div class="flex ">
+                                    <img src="./images/Frame.svg" alt="">
+                                    <img src="./images/Frame.svg" alt="">
+                                    <img src="./images/Frame.svg" alt="">
+                                    <img src="./images/Frame.svg" alt="">
+                                    <img src="./images/Frame2.svg" alt="">
+                                </div>
+                                <h2 class="card-title text-[#111] text-lg">Single Relax Chair</h2>
+                                <p>185.00 TK</p>
+                            </div>
+                        </div>
+                        <!-- card number 2 -->
+                        <div onclick="handleClickCard(this)" class="card  bg-[#FFF] p-5 rounded-lg">
+                            <figure class="bg-[#1111110D] py-8 px-16">
+                                <img src="./images/prod8.png" alt="prod8" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div class="flex ">
+                                    <img src="./images/Frame.svg" alt="">
+                                    <img src="./images/Frame.svg" alt="">
+                                    <img src="./images/Frame.svg" alt="">
+                                    <img src="./images/Frame.svg" alt="">
+                                    <img src="./images/Frame.svg" alt="">
+                                </div>
+                                <h2 class="card-title text-[#111]">Children play</h2>
+                                <p>299.00 TK</p>
+                            </div>
+                        </div>
+                        <!-- card number 3 -->
+                        <div onclick="handleClickCard(this)" class="card  bg-[#FFF] p-5 rounded-lg">
+                            <figure class="bg-[#1111110D] py-12 px-16">
+                                <img src="./images/prod9.png" alt="prod1" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div class="flex ">
+                                    <img src="./images/Frame.svg" alt="">
+                                    <img src="./images/Frame.svg" alt="">
+                                    <img src="./images/Frame.svg" alt="">
+                                    <img src="./images/Frame.svg" alt="">
+                                    <img src="./images/Frame.svg" alt="">
+                                </div>
+                                <h2 class="card-title text-[#111]">Flexible Sofa</h2>
+                                <p>339.00 TK</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Have coupon section start -->
+                <div>
+                    <div class="bg-[#FFF] p-6 rounded-lg mb-6">
+                        <h1 class="text-[#111] text-2xl font-medium mb-4">Have coupon?</h1>
+                        <div class="flex ">
+                            <input id="Coupon_input" type="text" placeholder="Coupon code"
+                                class="w-full border-2 p-4 border-[#1111110D] rounded-lg" disabled />
+                            <button id="Apply_btn"
+                                class="text-lg font-semibold px-6 py-4 bg-[#E527B2] text-[#FFF] rounded-lg  opacity-60"
+                                disabled>Apply</button>
+                        </div>
+                    </div>
+                    <div class="bg-[#FFF] p-4 rounded-lg relative">
+                        <!-- For data entry -->
+                        <div id="data_entry">
+                        </div>
+                        <hr class="py-2">
+                        <div>
+                            <h1 class="text-[#111] text-lg font-medium">Total Price: <span id="total_price"
+                                    class="text-[#837d7d] text-lg">00 Tk</span></h1>
+                            <h1 class="text-[#111] text-lg font-medium">Discount: <span id="discount"
+                                    class="text-[#837d7d] text-lg">00 Tk</span></h1>
+                            <h1 class="text-[#111] text-lg font-medium">Total: <span id="total"
+                                    class="text-[#837d7d] text-lg">00 Tk</span></h1>
+                        </div>
+                        <hr class="mb-10">
+                        <div class="flex justify-center">
+                            <button id="Purchase_btn" onclick="my_modal_1.showModal()"
+                                class="text-xl font-semibold px-5 py-4 bg-[#E527B2] text-[#FFF] rounded-lg absolute opacity-60"
+                                disabled>Make Purchase</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <!-- Open the modal -->
+                <dialog id="my_modal_1" class="modal">
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <figure class="px-10 pt-10">
+                            <img src="./images/congo.png" alt="congo"
+                                class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title text-[#111] text-4xl font-bold">Congratulations</h2>
+                            <p class="text-[#11111180] text-lg font-normal">Your Purchase the product</p>
+                            <div class="card-actions">
+                                <button id="go_home" class="text-xl font-semibold px-10 py-4 bg-[#E527B2] text-[#FFF] rounded-lg"
+                                >Go Home</button>
+                            </div>
+                        </div>
+                    </div>
+                </dialog>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
