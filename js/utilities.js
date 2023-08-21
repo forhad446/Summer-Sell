@@ -20,7 +20,7 @@ function setButton(count) {
     if (count > 0 && count < 200) {
         Purchase_btn.removeAttribute('disabled');
         Purchase_btn.classList.add('opacity-100')
-    }else if (count > 200) {
+    }else if (count >= 200) {
         Coupon_input.removeAttribute('disabled');
         Apply_btn.removeAttribute('disabled');
         Apply_btn.classList.add('opacity-100');
